@@ -3,11 +3,14 @@
 (function() {
     'use strict';
     
-    var userito     = require('..'),
-        express     = require('express'),
+    var express     = require('express'),
         bodyParser  = require('body-parser'),
         info        = require('../package'),
         app         = express(),
+        
+        userito     = require('..')({
+            type: 'file'
+        }),
         
         PORT        = process.env.USERITO_PORT || 3000,
         
