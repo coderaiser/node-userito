@@ -1,0 +1,34 @@
+{
+  "name": "userito",
+  "version": "1.0.0",
+  "description": "manage users via REST",
+  "main": "lib/userito.js",
+  "bin": {
+    "userito": "bin/userito.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.1",
+    "express": "~4.12.4",
+    "readjson": "~1.0.2",
+    "rendy": "~1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coderaiser/node-userito.git"
+  },
+  "keywords": [
+    "users",
+    "rest",
+    "mongodb"
+  ],
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderaiser/node-userito/issues"
+  },
+  "homepage": "https://github.com/coderaiser/node-userito#readme"
+}
