@@ -6,7 +6,6 @@
     var userito     = require('..'),
         express     = require('express'),
         bodyParser  = require('body-parser'),
-        rendy       = require('rendy'),
         info        = require('../package'),
         app         = express(),
         
@@ -19,13 +18,16 @@
     }));
     
     app.get('/', function(req, res) {
-        var name = rendy('{{ name }} v{{ version }}', {
-            name: info.name,
-            version: info.version
-        });
-    
         res.send({
-            name: name
+            name: info.name,
+            version: info.version,
+            api: {
+                'GET /users': 'get all users',
+                'GET /user/:id': 'get user with :id',
+                'PUT /user/:id': 'modify user with :id',
+                'PUT /user': 'create user',
+                'DELETE /user': 'remove user'
+            }
         });
     });
     
@@ -53,6 +55,14 @@
         var id      = Number(req.params.id);
             
         userito.remove(id, send(res));
+    });
+    
+    app.use('*', function(req, res) {
+        res
+            .status(500)
+            .json({
+                message: 'api not defined'
+            });
     });
     
     function send(res) {
