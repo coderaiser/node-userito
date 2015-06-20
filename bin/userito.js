@@ -8,8 +8,10 @@
         info        = require('../package'),
         app         = express(),
         
+        DB          = process.env.USERITO_DB,
         userito     = require('..')({
-            type: 'file'
+            type: DB ? 'db' : 'file',
+            db: DB
         }),
         
         PORT        = process.env.USERITO_PORT || 3000,
