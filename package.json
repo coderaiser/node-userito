@@ -10,7 +10,7 @@
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "mongoose": "^4.3.0",
-    "readjson": "~1.0.2",
+    "readjson": "^1.1.1",
     "rendy": "~1.1.0"
   },
   "devDependencies": {},
