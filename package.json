@@ -1,6 +1,6 @@
 {
   "name": "userito",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "manage users via REST",
   "main": "lib/userito.js",
   "bin": {

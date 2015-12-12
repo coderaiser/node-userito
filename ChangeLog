@@ -1,0 +1,9 @@
+2015.12.12, v1.0.1
+
+feature:
+- (package) rendy: ~ -> ^
+- (package) readjson v1.1.1
+- (package) mongoose v4.3.0
+- (package) express v4.13.3
+- (package) body-parser v1.14.1
+
