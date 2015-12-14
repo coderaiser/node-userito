@@ -42,13 +42,13 @@
     
     app.get('/user/:id', function(req, res) {
         var id      = Number(req.params.id);
-            
+        
         userito.get(id, send(res));
     });
     
     app.put('/user/:id', function(req, res) {
         var id      = Number(req.params.id);
-            
+        
         userito.modify(id, req.body, send(res));
     });
     
