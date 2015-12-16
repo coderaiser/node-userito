@@ -13,7 +13,7 @@
     "os-homedir": "^1.0.1",
     "readjson": "^1.1.1",
     "rendy": "^1.1.0",
-    "writejson": "^1.0.1"
+    "writejson": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {
