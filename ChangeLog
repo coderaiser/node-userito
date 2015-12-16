@@ -1,3 +1,9 @@
+2015.12.16, v1.0.3
+
+feature:
+- (userito) fs.writeFile -> writejson
+
+
 2015.12.14, v1.0.2
 
 feature:
