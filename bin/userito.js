@@ -30,7 +30,7 @@
                 'GET /users': 'get all users',
                 'GET /user/:id': 'get user with :id',
                 'PUT /user/:id': 'modify user with :id',
-                'PUT /user': 'create user',
+                'POST /user': 'create user',
                 'DELETE /user': 'remove user'
             }
         });
