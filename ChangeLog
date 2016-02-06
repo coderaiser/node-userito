@@ -1,3 +1,9 @@
+2016.02.06, v1.0.5
+
+fix:
+- (file) writeFile -> writejson
+
+
 2015.12.16, v1.0.4
 
 feature:
