@@ -41,14 +41,12 @@
     });
     
     app.get('/user/:username', function(req, res) {
-        var username      = Number(req.params.username);
-        
+        var username = req.params.username;
         userito.get(username, send(res));
     });
     
     app.put('/user/:username', function(req, res) {
-        var username      = Number(req.params.username);
-        
+        var username = req.params.username;
         userito.modify(username, req.body, send(res));
     });
     
@@ -57,8 +55,7 @@
     });
     
     app.delete('/user/:username', function(req, res) {
-        var username      = Number(req.params.username);
-            
+        var username = req.params.username;
         userito.remove(username, send(res));
     });
     
