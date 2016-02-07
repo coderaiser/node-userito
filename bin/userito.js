@@ -28,8 +28,8 @@
             version: info.version,
             api: {
                 'GET /users': 'get all users',
-                'GET /user/:id': 'get user with :id',
-                'PUT /user/:id': 'modify user with :id',
+                'GET /user/:username': 'get user with :username',
+                'PUT /user/:username': 'modify user with :username',
                 'POST /user': 'create user',
                 'DELETE /user': 'remove user'
             }
@@ -40,26 +40,26 @@
         userito.all(send(res));
     });
     
-    app.get('/user/:id', function(req, res) {
-        var id      = Number(req.params.id);
+    app.get('/user/:username', function(req, res) {
+        var username      = Number(req.params.username);
         
-        userito.get(id, send(res));
+        userito.get(username, send(res));
     });
     
-    app.put('/user/:id', function(req, res) {
-        var id      = Number(req.params.id);
+    app.put('/user/:username', function(req, res) {
+        var username      = Number(req.params.username);
         
-        userito.modify(id, req.body, send(res));
+        userito.modify(username, req.body, send(res));
     });
     
     app.post('/user', function(req, res) {
         userito.create(req.body, send(res));
     });
     
-    app.delete('/user/:id', function(req, res) {
-        var id      = Number(req.params.id);
+    app.delete('/user/:username', function(req, res) {
+        var username      = Number(req.params.username);
             
-        userito.remove(id, send(res));
+        userito.remove(username, send(res));
     });
     
     app.use('*', function(req, res) {
