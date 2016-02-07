@@ -1,7 +1,7 @@
 {
     "exist": "username: \"{{ username }}\" already exist",
     "create": "\"{{ username }}\" created successfully",
-    "notFound": "user with id \"{{ id }}\" not found",
-    "remove": "user with id \"{{ id }}\" removed successfully",
-    "modify": "user with id \"{{ id }}\" modified successfully"
+    "notFound": "user with username \"{{ username }}\" not found",
+    "remove": "user with username \"{{ username }}\" removed successfully",
+    "modify": "user with username \"{{ username }}\" modified successfully"
 }
