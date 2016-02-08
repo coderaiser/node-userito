@@ -18,12 +18,12 @@ Userito could work with users in:
 ```js
 let userito = require('userito')({
     type: 'file'
-ww};
+});
 
 let userito = require('userito')({
     type: 'db',
     db: 'mongodb://login:password@dsxxxx.mongolab.com:43942/userito'
-};
+});
 ```
 
 #### userito.all(callback)#
@@ -40,7 +40,7 @@ Get user by `username`.
 ```js
 userito.get('coderaiser', (error, user, info) => {
     console.log(error || info || users);
-}
+});
 ```
 
 #### userito.create(data, callback)#
@@ -52,7 +52,7 @@ userito.create({
     password: 'hello',
 }, (error, msg, info) => {
     console.log(error || info || msg);
-}
+});
 ```
 
 #### userito.modify(username, data, callback)#
@@ -63,7 +63,7 @@ userito.create('coderaiser', {
     password: 'world'
 }, (error, msg, info) => {
     console.log(error || info || msg);
-}
+});
 ```
 
 #### userito.remove(username, callback)#
@@ -72,7 +72,7 @@ Asynchronous removing of specific user.
 ```js
 userito.remove('coderaiser', (error, info) => {
     console.log(error || info || msg);
-}
+});
 ```
 
 ## License
