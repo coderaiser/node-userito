@@ -18,12 +18,12 @@ Userito could work with users in:
 ```js
 let userito = require('userito')({
     type: 'file'
-ww};
+});
 
 let userito = require('userito')({
     type: 'db',
     db: 'mongodb://login:password@dsxxxx.mongolab.com:43942/userito'
-};
+});
 ```
 
 #### userito.all(callback)#
