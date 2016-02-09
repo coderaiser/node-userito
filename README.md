@@ -26,7 +26,7 @@ let userito = require('userito')({
 });
 ```
 
-#### userito.all(callback)
+### userito.all(callback)
 Get all existing users.
 
 ```js
@@ -34,7 +34,7 @@ userito.all((error, users, info) => {
     console.log(error || info || users);
 });
 ```
-#### userito.get(username, callback)
+### userito.get(username, callback)
 Get user by `username`.
 
 ```js
@@ -43,7 +43,7 @@ userito.get('coderaiser', (error, user, info) => {
 });
 ```
 
-#### userito.create(data, callback)
+### userito.create(data, callback)
 Create user.
 
 ```js
@@ -55,7 +55,7 @@ userito.create({
 });
 ```
 
-#### userito.modify(username, data, callback)
+### userito.modify(username, data, callback)
 Modify user named with `username`.
 
 ```js
@@ -66,7 +66,7 @@ userito.create('coderaiser', {
 });
 ```
 
-#### userito.remove(username, callback)
+### userito.remove(username, callback)
 Remove user.
 
 ```js
