@@ -44,7 +44,7 @@ userito.get('coderaiser', (error, user, info) => {
 ```
 
 #### userito.create(data, callback)
-Create new user.
+Create user.
 
 ```js
 userito.create({
@@ -56,7 +56,7 @@ userito.create({
 ```
 
 #### userito.modify(username, data, callback)
-Asynchronous modifying of existing user named with `username`.
+Modify user named with `username`.
 
 ```js
 userito.create('coderaiser', {
@@ -67,7 +67,7 @@ userito.create('coderaiser', {
 ```
 
 #### userito.remove(username, callback)
-Asynchronous removing of specific user.
+Remove user.
 
 ```js
 userito.remove('coderaiser', (error, info) => {
