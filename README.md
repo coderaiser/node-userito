@@ -13,7 +13,10 @@ Userito could work with users in:
 ## API
 
 ### Initialization
-`userito` tackes `options` object with two properties: `type` (`db` or `file`) and `db` with String-address of needed database.
+`userito` tackes `options` object with properties:
+- `type` (`db` or `file`) and 
+- db` with database url
+- data base schema
 
 ```js
 let userito = require('userito')({
@@ -22,7 +25,12 @@ let userito = require('userito')({
 
 let userito = require('userito')({
     type: 'db',
-    db: 'mongodb://login:password@dsxxxx.mongolab.com:43942/userito'
+    db: 'mongodb://login:password@dsxxxx.mongolab.com:43942/userito',
+    schema: {
+        port: Number,
+        username: String,
+        password: String
+    }
 });
 ```
 
