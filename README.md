@@ -87,7 +87,7 @@ userito.remove('coderaiser', (error, info) => {
 
 MIT
 
-[NPMIMGURL]:                https://img.shields.io/npm/v/node-userito.svg?style=flat
+[NPMIMGURL]:                https://img.shields.io/npm/v/userito.svg?style=flat
 [BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/node-userito/master.svg?style=flat
 [DependencyStatusIMGURL]:   https://img.shields.io/gemnasium/coderaiser/node-userito.svg?style=flat
 [LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
