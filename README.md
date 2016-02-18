@@ -1,4 +1,4 @@
-# Userito
+# Userito [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
 
 Manage users from database or json.
 
@@ -86,3 +86,12 @@ userito.remove('coderaiser', (error, info) => {
 ## License
 
 MIT
+
+[NPMIMGURL]:                https://img.shields.io/npm/v/node-userito.svg?style=flat
+[BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/node-userito/master.svg?style=flat
+[DependencyStatusIMGURL]:   https://img.shields.io/gemnasium/coderaiser/node-userito.svg?style=flat
+[LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
+[NPMURL]:                   https://npmjs.org/package/node-userito "npm"
+[BuildStatusURL]:           https://travis-ci.org/coderaiser/node-userito  "Build Status"
+[DependencyStatusURL]:      https://gemnasium.com/coderaiser/node-userito "Dependency Status"
+[LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
