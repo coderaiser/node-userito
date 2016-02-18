@@ -1,6 +1,6 @@
 # Userito
 
-Manage users via REST.
+Manage users from database or json.
 
 Userito could work with users in:
 - `~/.userito.json` (path could be overriden with `USERITO_DIR`);
