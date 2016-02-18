@@ -1,7 +1,7 @@
 {
   "name": "userito",
   "version": "2.0.1",
-  "description": "manage users via REST",
+  "description": "manage users from database or json",
   "main": "lib/userito.js",
   "bin": {
     "userito": "bin/userito.js"
