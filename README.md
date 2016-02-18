@@ -58,19 +58,19 @@ Create user.
 userito.create({
     username: 'coderaiser',
     password: 'hello',
-}, (error, msg, info) => {
-    console.log(error || info || msg);
+}, (error, msg) => {
+    console.log(error || msg);
 });
 ```
 
-### userito.modify(username, data, callback)
+### userito.update(username, data, callback)
 Modify user named with `username`.
 
 ```js
-userito.create('coderaiser', {
+userito.update('coderaiser', {
     password: 'world'
-}, (error, msg, info) => {
-    console.log(error || info || msg);
+}, (error, msg) => {
+    console.log(error || msg);
 });
 ```
 
