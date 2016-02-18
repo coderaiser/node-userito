@@ -15,8 +15,8 @@ Userito could work with users in:
 ### Initialization
 `userito` tackes `options` object with properties:
 - `type` (`db` or `file`) and 
-- db` with database url
-- data base schema
+- `db` with database url
+- database schema
 
 ```js
 let userito = require('userito')({
