@@ -13,10 +13,11 @@ Userito could work with users in:
 ## API
 
 ### Initialization
-`userito` tackes `options` object with properties:
+`userito` takes `options` object with properties:
 - `type` (`db` or `file`) and 
+- `path` path of storage file
 - `db` with database url
-- database schema
+- `schema`
 
 ```js
 let userito = require('userito')({

@@ -3,5 +3,5 @@
     "create": "\"{{ username }}\" created successfully",
     "notFound": "user with username \"{{ username }}\" not found",
     "remove": "user with username \"{{ username }}\" removed successfully",
-    "modify": "user with username \"{{ username }}\" modified successfully"
+    "modify": "user with username \"{{ username }}\" updated successfully"
 }
