@@ -1,3 +1,14 @@
+2016.02.26, v2.1.0
+
+fix:
+- (db) schema
+
+feature:
+- (file) add path
+- (travis) add
+- (package) add jscs, jshint
+
+
 2016.02.18, v2.0.2
 
 fix:
