@@ -1,3 +1,9 @@
+2016.02.26, v2.2.0
+
+feature:
+- (file) add home dir "~" support
+
+
 2016.02.26, v2.1.0
 
 fix:
