@@ -3,8 +3,8 @@
 Manage users from database or json.
 
 Userito could work with users in:
-- `~/.userito.json` (path could be overriden with `USERITO_DIR`);
-- mongodb database
+- `json` file
+- `mongodb` database
 
 ## Install
 
@@ -15,7 +15,7 @@ Userito could work with users in:
 ### Initialization
 `userito` takes `options` object with properties:
 - `type` (`db` or `file`) and 
-- `path` path of storage file
+- `path` path of storage file (`~/.userito.json` default)
 - `db` with database url
 - `schema`
 
