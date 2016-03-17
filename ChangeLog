@@ -1,3 +1,9 @@
+2016.03.17, v2.2.4
+
+feature:
+- (file) os-homedir -> untildify
+
+
 2016.03.11, v2.2.3
 
 fix:
