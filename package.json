@@ -17,11 +17,11 @@
     "writejson": "^1.1.0"
   },
   "devDependencies": {
-    "jscs": "^2.10.1",
+    "jscs": "~3.0.3",
     "jshint": "^2.9.1"
   },
   "scripts": {
-    "test": "jshint lib && jscs --esnext lib"
+    "test": "jshint lib && jscs lib"
   },
   "repository": {
     "type": "git",
