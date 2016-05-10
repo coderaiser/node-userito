@@ -10,10 +10,10 @@
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "mongoose": "^4.3.0",
-    "os-homedir": "~1.0.1",
+    "os-homedir": "^1.0.1",
     "readjson": "^1.1.1",
     "rendy": "^1.1.0",
-    "untildify": "~2.1.0",
+    "untildify": "^2.1.0",
     "writejson": "^1.1.0"
   },
   "devDependencies": {
