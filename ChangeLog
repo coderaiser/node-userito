@@ -1,3 +1,11 @@
+2016.05.10, v2.2.6
+
+feature:
+- (package) untildify v3.0.2
+- (package) ~ -> ^
+- (package) jscs v3.0.3
+
+
 2016.03.20, v2.2.5
 
 fix:
