@@ -1,3 +1,10 @@
+2018.01.22, v2.2.7
+
+feature:
+- (package) mongoose v5.0.1
+- (package) express v4.15.5
+
+
 2016.05.10, v2.2.6
 
 feature:
