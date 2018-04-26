@@ -12,7 +12,7 @@
     "mongoose": "^5.0.1",
     "os-homedir": "^1.0.1",
     "readjson": "^1.1.1",
-    "rendy": "^1.1.0",
+    "rendy": "^2.0.0",
     "untildify": "^3.0.2",
     "writejson": "^1.1.0"
   },
