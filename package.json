@@ -10,18 +10,18 @@
     "body-parser": "^1.14.1",
     "express": "^4.15.5",
     "mongoose": "^5.0.1",
-    "os-homedir": "^1.0.1",
     "readjson": "^1.1.1",
     "rendy": "^2.0.0",
+    "try-catch": "^2.0.0",
     "untildify": "^3.0.2",
     "writejson": "^1.1.0"
   },
   "devDependencies": {
-    "jscs": "^3.0.3",
-    "jshint": "^2.9.1"
+    "eslint": "^4.19.1",
+    "eslint-plugin-node": "^6.0.1"
   },
   "scripts": {
-    "test": "jshint lib && jscs lib"
+    "lint": "eslint lib"
   },
   "repository": {
     "type": "git",
@@ -37,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/coderaiser/node-userito/issues"
   },
-  "homepage": "https://github.com/coderaiser/node-userito#readme"
+  "homepage": "https://github.com/coderaiser/node-userito#readme",
+  "engines": {
+    "node": ">=4.0.0"
+  }
 }
