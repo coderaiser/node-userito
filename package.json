@@ -14,7 +14,7 @@
     "rendy": "^2.0.0",
     "try-catch": "^2.0.0",
     "untildify": "^3.0.2",
-    "writejson": "^1.1.2"
+    "writejson": "^2.0.1"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
