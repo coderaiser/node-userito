@@ -1,3 +1,12 @@
+2018.07.03, v2.2.10
+
+fix:
+- (file) when user not found should return error
+
+feature:
+- (package) eslint v5.0.1
+
+
 2018.06.14, v2.2.9
 
 feature:
