@@ -20,11 +20,11 @@ Userito could work with users in:
 - `schema`
 
 ```js
-let userito = require('userito')({
+const userito = require('userito')({
     type: 'file'
 });
 
-let userito = require('userito')({
+const userito = require('userito')({
     type: 'db',
     db: 'mongodb://login:password@dsxxxx.mongolab.com:43942/userito',
     schema: {
