@@ -21,7 +21,7 @@
     "eslint-plugin-node": "^8.0.0"
   },
   "scripts": {
-    "lint": "eslint lib"
+    "lint": "eslint bin lib"
   },
   "repository": {
     "type": "git",
