@@ -18,10 +18,14 @@
   },
   "devDependencies": {
     "eslint": "^6.3.0",
-    "eslint-plugin-node": "^10.0.0"
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-putout": "^2.0.0",
+    "madrun": "^3.0.1",
+    "putout": "^5.11.1"
   },
   "scripts": {
-    "lint": "eslint bin lib"
+    "lint": "madrun lint",
+    "fix:lint": "madrun fix:lint"
   },
   "repository": {
     "type": "git",
@@ -39,6 +43,6 @@
   },
   "homepage": "https://github.com/coderaiser/node-userito#readme",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=8.3.0"
   }
 }

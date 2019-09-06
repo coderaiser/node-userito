@@ -16,7 +16,7 @@ const userito = require('..')({
 const PORT = process.env.USERITO_PORT || 3000;
 
 app.use(bodyParser.urlencoded({
-    extended: true
+    extended: true,
 }));
 
 app.get('/', (req, res) => {
@@ -28,8 +28,8 @@ app.get('/', (req, res) => {
             'GET /user/:username': 'get user with :username',
             'PUT /user/:username': 'modify user with :username',
             'POST /user': 'create user',
-            'DELETE /user': 'remove user'
-        }
+            'DELETE /user': 'remove user',
+        },
     });
 });
 
@@ -38,12 +38,12 @@ app.get('/users', (req, res) => {
 });
 
 app.get('/user/:username', (req, res) => {
-    const username = req.params.username;
+    const {username} = req.params;
     userito.get(username, send(res));
 });
 
 app.put('/user/:username', (req, res) => {
-    const username = req.params.username;
+    const {username} = req.params;
     userito.modify(username, req.body, send(res));
 });
 
@@ -52,7 +52,7 @@ app.post('/user', (req, res) => {
 });
 
 app.delete('/user/:username', (req, res) => {
-    const username = req.params.username;
+    const {username} = req.params;
     userito.remove(username, send(res));
 });
 
@@ -60,7 +60,7 @@ app.use('*', (req, res) => {
     res
         .status(500)
         .json({
-            message: 'api not defined'
+            message: 'api not defined',
         });
 });
 
@@ -81,8 +81,8 @@ function send(res) {
 
 const server = app.listen(PORT, () => {
     const host = server.address().address;
-    const port = server.address().port;
-
+    const {port} = server.address();
+    
     console.log('%s v%s listening at http://%s:%s', info.name, info.version, host, port);
 });
     
