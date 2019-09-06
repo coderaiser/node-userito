@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "eslint": "^5.0.1",
-    "eslint-plugin-node": "^8.0.0"
+    "eslint-plugin-node": "^10.0.0"
   },
   "scripts": {
     "lint": "eslint bin lib"
