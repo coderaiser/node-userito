@@ -17,7 +17,7 @@
     "writejson": "^2.0.1"
   },
   "devDependencies": {
-    "eslint": "^5.0.1",
+    "eslint": "^6.3.0",
     "eslint-plugin-node": "^10.0.0"
   },
   "scripts": {
