@@ -17,15 +17,23 @@
     "writejson": "^3.0.0"
   },
   "devDependencies": {
+    "c8": "^7.6.0",
     "eslint": "^6.3.0",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-putout": "^7.3.1",
     "madrun": "^8.8.1",
-    "putout": "^15.7.2"
+    "mock-require": "^3.0.3",
+    "putout": "^15.7.2",
+    "supertape": "^5.1.0"
   },
   "scripts": {
     "lint": "madrun lint",
-    "fix:lint": "madrun fix:lint"
+    "fresh:lint": "madrun fresh:lint",
+    "lint:fresh": "madrun lint:fresh",
+    "fix:lint": "madrun fix:lint",
+    "test": "madrun test",
+    "coverage": "madrun coverage",
+    "report": "madrun report"
   },
   "repository": {
     "type": "git",
@@ -43,6 +51,6 @@
   },
   "homepage": "https://github.com/coderaiser/node-userito#readme",
   "engines": {
-    "node": ">=8.3.0"
+    "node": ">=14"
   }
 }
