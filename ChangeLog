@@ -1,3 +1,21 @@
+2021.03.15, v4.0.1
+
+fix:
+- (userito) npmignore: add spec files
+
+
+2021.03.15, v4.0.0
+
+feature:
+- (userito) drop support of node < 14
+- (package) eslint-plugin-putout v7.3.1
+- (package) putout v15.7.2
+- (package) madrun v8.8.1
+- (package) readjson v2.2.2
+- (package) writejson v3.0.0
+- (package) try-catch v3.0.0
+
+
 2019.09.06, v3.0.0
 
 feature:
