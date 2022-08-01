@@ -6,6 +6,7 @@
   "bin": {
     "userito": "bin/userito.js"
   },
+  "commitType": "colon",
   "dependencies": {
     "body-parser": "^1.14.1",
     "express": "^4.15.5",
