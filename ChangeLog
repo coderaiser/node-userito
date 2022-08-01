@@ -1,3 +1,16 @@
+2022.08.01, v5.0.0
+
+feature:
+- package: mongoose v6.5.0
+- package: eslint-plugin-n v15.2.4
+- package: madrun v9.0.6
+- package: supertape v7.6.0
+- package: eslint v8.21.0
+- package: eslint-plugin-putout v16.0.0
+- package: putout v27.0.1
+- userito: drop support of node < 16
+- (package) eslint v7.22.0
+
 2021.03.15, v4.0.1
 
 fix:

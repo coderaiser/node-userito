@@ -1,6 +1,6 @@
 {
   "name": "userito",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "type": "commonjs",
   "description": "manage users from database or json",
   "main": "lib/userito.js",
