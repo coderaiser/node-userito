@@ -24,7 +24,7 @@
     "eslint-plugin-putout": "^7.3.1",
     "madrun": "^8.8.1",
     "mock-require": "^3.0.3",
-    "putout": "^15.7.2",
+    "putout": "^27.0.1",
     "supertape": "^5.1.0"
   },
   "scripts": {
