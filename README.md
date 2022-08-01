@@ -1,12 +1,10 @@
-# Userito [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
+# Userito [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL]
 
 [NPMIMGURL]: https://img.shields.io/npm/v/userito.svg?style=flat
 [BuildStatusURL]: https://github.com/coderaiser/node-userito/actions?query=workflow%3A%22Node+CI%22 "Build Status"
 [BuildStatusIMGURL]: https://github.com/coderaiser/node-userito/workflows/Node%20CI/badge.svg
-[DependencyStatusIMGURL]: https://img.shields.io/david/coderaiser/node-userito.svg?style=flat
 [LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
 [NPMURL]: https://npmjs.org/package/node-userito "npm"
-[DependencyStatusURL]: https://david-dm.org/coderaiser/node-userito "Dependency Status"
 [LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
 
 Manage users from database or json.

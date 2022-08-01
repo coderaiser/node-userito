@@ -5,13 +5,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const info = require('../package');
-const app = express();
-
 const db = process.env.USERITO_DB;
+
 const userito = require('..')({
     type: db ? 'db' : 'file',
     db,
 });
+const app = express();
 
 const PORT = process.env.USERITO_PORT || 3000;
 
