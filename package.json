@@ -10,7 +10,7 @@
   "dependencies": {
     "body-parser": "^1.14.1",
     "express": "^4.15.5",
-    "mongoose": "^5.0.1",
+    "mongoose": "^6.5.0",
     "readjson": "^2.2.2",
     "rendy": "^3.0.1",
     "try-catch": "^3.0.0",
