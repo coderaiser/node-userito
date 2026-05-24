@@ -13,7 +13,7 @@
     "express": "^5.2.1",
     "mongoose": "^9.6.2",
     "readjson": "^2.2.2",
-    "rendy": "^3.0.1",
+    "rendy": "^5.0.2",
     "try-catch": "^3.0.0",
     "untildify": "^4.0.0",
     "writejson": "^3.0.0"
