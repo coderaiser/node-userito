@@ -6,11 +6,11 @@ import bodyParser from 'body-parser';
 import info from '../package.json' with {
     type: 'json',
 };
-
-const {USERITO_TYPE, USERITO_DB}= process.env;
 import {createUserito} from '../lib/userito.js';
 
-const userito =createUserito({
+const {USERITO_TYPE, USERITO_DB} = process.env;
+
+const userito = createUserito({
     type: USERITO_TYPE || 'file',
     db: USERITO_DB,
 });
