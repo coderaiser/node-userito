@@ -14,7 +14,7 @@
     "mongoose": "^9.6.2",
     "readjson": "^2.2.2",
     "rendy": "^5.0.2",
-    "try-catch": "^3.0.0",
+    "try-catch": "^4.0.9",
     "untildify": "^4.0.0",
     "writejson": "^3.0.0"
   },
