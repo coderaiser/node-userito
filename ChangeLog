@@ -1,3 +1,22 @@
+2026.05.24, v6.0.0
+
+feature:
+- dabe9e1 userito: callback -> promise
+- 522ca90 drop support of node < 22
+- e6bed76 userito: migrate to ESM
+- 3812103 userito: untildify v6.0.0
+- 99007f3 userito: try-catch v4.0.9
+- 9896460 userito: supertape v13.2.0
+- 2cb67fd userito: rendy v5.0.2
+- aedeca5 userito: putout v42.5.0
+- b14d62d userito: mongoose v9.6.2
+- b06cc7c userito: express v5.2.1
+- 79aa040 userito: eslint-plugin-node v11.1.0
+- 8081efc userito: c8 v11.0.0
+- b191275 userito: body-parser v2.2.2
+- 4712b4c userito: eslint v10.4.0
+- a4df906 userito: eslint v10.4.0
+
 2022.08.01, v5.0.0
 
 feature:
