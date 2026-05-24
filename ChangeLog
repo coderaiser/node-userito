@@ -1,3 +1,9 @@
+2026.05.24, v6.0.5
+
+feature:
+- 4105ef8 mongo: add ability to test
+- 8e1097b userito: superc8 v12.7.0
+
 2026.05.24, v6.0.4
 
 fix:
