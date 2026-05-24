@@ -1,13 +1,12 @@
 {
   "name": "userito",
   "version": "5.0.0",
-  "type": "commonjs",
+  "type": "module",
   "description": "manage users from database or json",
   "main": "lib/userito.js",
   "bin": {
     "userito": "bin/userito.js"
   },
-  "commitType": "colon",
   "dependencies": {
     "body-parser": "^2.2.2",
     "express": "^5.2.1",
@@ -38,7 +37,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/coderaiser/node-userito.git"
+    "url": "git+https://github.com/coderaiser/node-userito.git"
   },
   "keywords": [
     "users",

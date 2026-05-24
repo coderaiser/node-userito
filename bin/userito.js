@@ -1,16 +1,17 @@
 #!/usr/bin/env node
 
-'use strict';
+import process from 'node:process';
+import express from 'express';
+import bodyParser from 'body-parser';
+import info from '../package';
 
-const express = require('express');
-const bodyParser = require('body-parser');
-const info = require('../package');
 const db = process.env.USERITO_DB;
 
 const userito = require('..')({
     type: db ? 'db' : 'file',
     db,
 });
+
 const app = express();
 
 const PORT = process.env.USERITO_PORT || 3000;
@@ -64,20 +65,23 @@ app.use('*', (req, res) => {
         });
 });
 
-function send(res) {
-    return (error, data, appError) => {
-        if (data)
-            res.send(data);
-        else if (error)
-            res
-                .status(500)
-                .send(error);
-        else
-            res
-                .status(400)
-                .send(appError);
-    };
-}
+const send = (res) => (error, data, appError) => {
+    if (data) {
+        res.send(data);
+        return;
+    }
+    
+    if (error) {
+        res
+            .status(500)
+            .send(error);
+        return;
+    }
+    
+    res
+        .status(400)
+        .send(appError);
+};
 
 const server = app.listen(PORT, () => {
     const host = server.address().address;
@@ -85,4 +89,3 @@ const server = app.listen(PORT, () => {
     
     console.log('%s v%s listening at http://%s:%s', info.name, info.version, host, port);
 });
-    

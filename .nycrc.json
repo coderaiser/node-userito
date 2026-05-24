@@ -1,11 +1,12 @@
 {
     "skipFull": false,
-    "check-coverage": false,
+    "checkCoverage": false,
     "all": false,
     "exclude": [
         "**/*.spec.*",
-        "**/fixture",
+        "**/*.config.*",
         "**/.*.*",
+        "**/fixture",
         "packages/*/bin",
         "packages/*/test"
     ],
