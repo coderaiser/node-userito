@@ -9,7 +9,7 @@
   },
   "commitType": "colon",
   "dependencies": {
-    "body-parser": "^1.14.1",
+    "body-parser": "^2.2.2",
     "express": "^4.15.5",
     "mongoose": "^6.5.0",
     "readjson": "^2.2.2",
