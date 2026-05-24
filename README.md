@@ -31,6 +31,7 @@ Userito could work with users in:
 
 ```js
 import {userito} from 'userito';
+
 const useritoFile = userito({
     type: 'file',
 });
@@ -51,6 +52,8 @@ const useritoDB = userito({
 Get all existing users.
 
 ```js
+import {tryToCatch} from 'try-to-catch';
+
 const [error, users] = await tryToCatch(all);
 ```
 
@@ -59,6 +62,8 @@ const [error, users] = await tryToCatch(all);
 Get user by `username`.
 
 ```js
+import {tryToCatch} from 'try-to-catch';
+
 const [error, users] = await tryToCatch(get, 'coderaiser');
 console.log(error || users);
 ```
@@ -68,10 +73,13 @@ console.log(error || users);
 Create user.
 
 ```js
+import {tryToCatch} from 'try-to-catch';
+
 const [error, msg] = await tryToCatch(create, {
     username: 'coderaiser',
     password: 'hello',
 });
+
 console.log(error || msg);
 ```
 
@@ -80,9 +88,12 @@ console.log(error || msg);
 Modify user named with `username`.
 
 ```js
-const [error,msg] = await tryToCatch(update, 'coderaiser', {
+import {tryToCatch} from 'try-to-catch';
+
+const [error, msg] = await tryToCatch(update, 'coderaiser', {
     password: 'world',
 });
+
 console.log(error || msg);
 ```
 
@@ -91,6 +102,8 @@ console.log(error || msg);
 Remove user.
 
 ```js
+import {tryToCatch} from 'try-to-catch';
+
 const [error, info] = await tryToCatch(remove, 'coderaiser');
 console.log(error || info);
 ```
