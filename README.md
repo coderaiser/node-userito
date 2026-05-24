@@ -30,11 +30,12 @@ Userito could work with users in:
 - `schema`
 
 ```js
-const useritoFile = require('userito')({
+import {userito} from 'userito';
+const useritoFile = userito({
     type: 'file',
 });
 
-const useritoDB = require('userito')({
+const useritoDB = userito({
     type: 'db',
     db: 'mongodb://login:password@dsxxxx.mongolab.com:43942/userito',
     schema: {
@@ -45,59 +46,53 @@ const useritoDB = require('userito')({
 });
 ```
 
-### userito.all(callback)
+### all()
 
 Get all existing users.
 
 ```js
-userito.all((error, users, info) => {
-    console.log(error || info || users);
-});
+const [error, users] = await tryToCatch(all);
 ```
 
-### userito.get(username, callback)
+### get(username)
 
 Get user by `username`.
 
 ```js
-userito.get('coderaiser', (error, user, info) => {
-    console.log(error || info || users);
-});
+const [error, users] = await tryToCatch(get, 'coderaiser');
+console.log(error || users);
 ```
 
-### userito.create(data, callback)
+### create(data)
 
 Create user.
 
 ```js
-userito.create({
+const [error, msg] = await tryToCatch(create, {
     username: 'coderaiser',
     password: 'hello',
-}, (error, msg) => {
-    console.log(error || msg);
 });
+console.log(error || msg);
 ```
 
-### userito.update(username, data, callback)
+### update(username, data)
 
 Modify user named with `username`.
 
 ```js
-userito.update('coderaiser', {
+const [error,msg] = await tryToCatch(update, 'coderaiser', {
     password: 'world',
-}, (error, msg) => {
-    console.log(error || msg);
 });
+console.log(error || msg);
 ```
 
-### userito.remove(username, callback)
+### remove(username)
 
 Remove user.
 
 ```js
-userito.remove('coderaiser', (error, info) => {
-    console.log(error || info || msg);
-});
+const [error, info] = await tryToCatch(remove, 'coderaiser');
+console.log(error || info);
 ```
 
 ## License
