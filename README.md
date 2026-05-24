@@ -24,20 +24,20 @@ Userito could work with users in:
 
 `userito` takes `options` object with properties:
 
-- `type` (`db` or `file`) and
+- `type` (`mongo` or `file`) and
 - `path` path of storage file (`~/.userito.json` default)
 - `db` with database url
 - `schema`
 
 ```js
-import {userito} from 'userito';
+import {createUserito} from 'userito';
 
-const useritoFile = userito({
+const useritoFile = createUserito({
     type: 'file',
 });
 
-const useritoDB = userito({
-    type: 'db',
+const useritoDB = createUserito({
+    type: 'mongo',
     db: 'mongodb://login:password@dsxxxx.mongolab.com:43942/userito',
     schema: {
         port: Number,

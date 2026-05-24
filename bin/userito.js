@@ -3,13 +3,16 @@
 import process from 'node:process';
 import express from 'express';
 import bodyParser from 'body-parser';
-import info from '../package';
+import info from '../package.json' with {
+    type: 'json',
+};
 
-const db = process.env.USERITO_DB;
+const {USERITO_TYPE, USERITO_DB}= process.env;
+import {createUserito} from '../lib/userito.js';
 
-const userito = require('..')({
-    type: db ? 'db' : 'file',
-    db,
+const userito =createUserito({
+    type: USERITO_TYPE || 'file',
+    db: USERITO_DB,
 });
 
 const app = express();
